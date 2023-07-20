@@ -216,12 +216,18 @@
 }
 
 .gradient {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: linear-gradient(180deg, #ff0099 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 48px;
     font-weight: 700;
+}
+
+.primary2 {
+    color: #ff0586;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .card-descrition {
@@ -256,8 +262,10 @@
 }
 
 .play-button img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 100px;
 }
 
 .play-button {
@@ -334,19 +342,21 @@
     align-items: center;
     gap: 5px;
 }
-#word-gm:hover{
+
+#word-gm:hover {
     border-radius: 50px;
     background-color: #FFF;
     border: 2px solid rgb(221, 66, 162);
     padding: 10px;
     height: 45px;
 }
+
 .games-cata2 {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
 }
 
 /* footer section */
@@ -440,13 +450,16 @@ footer {
         justify-content: center;
         height: 100%;
     }
-    .banner-info{
+
+    .banner-info {
         margin-top: 390px;
         margin-bottom: 100px;
     }
-    .bnr-logo{
+
+    .bnr-logo {
         margin-left: 40px;
     }
+
     .banner-container2 {
         flex-direction: column;
         justify-content: center;
@@ -477,10 +490,12 @@ footer {
         text-align: center;
         width: 150%;
     }
-    .btn3{
+
+    .btn3 {
         margin-top: 20px;
         margin-bottom: 50px;
     }
+
     .bnr-description22 {
         text-align: center;
     }
@@ -488,13 +503,16 @@ footer {
     .bnr-description21 {
         text-align: center;
     }
-    .card-detail h3{
+
+    .card-detail h3 {
         margin-top: 100px;
         width: 100%;
     }
-    .card-descrition{
+
+    .card-descrition {
         margin-top: 15px;
     }
+
     .card-info {
         grid-template-columns: 1fr;
     }
@@ -503,9 +521,11 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .play-info{
+
+    .play-info {
         width: 100%;
     }
+
     .play-info p {
         text-align: center;
         margin-top: 20px;
@@ -523,9 +543,11 @@ footer {
     .play-img {
         margin-left: 180px;
     }
-    .tom img{
+
+    .tom img {
         height: 220px;
     }
+
     .games-cata1 {
         flex-wrap: wrap;
     }
@@ -551,25 +573,144 @@ footer {
 }
 
 
-@media screen and (min-width: 566px) and (max-width :992px) {
+@media screen and (min-width: 577px) and (max-width :992px) {
+
+    header {
+        padding: 20px;
+    }
 
     .nav-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-info {
         flex-direction: column;
     }
 
     .banner-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .banner-info {
+        margin-top: 390px;
+        margin-bottom: 100px;
+    }
+
+    .bnr-logo {
+        margin-left: 40px;
     }
 
     .banner-container2 {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .bnr-logo2 {
+        width: 500px;
+        margin-right: 70px;
+    }
+
+    .banner-info2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 120px;
+    }
+
+    .title2 {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .bnr-description2 {
+        text-align: center;
+        width: 150%;
+    }
+
+    .btn3 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .bnr-description22 {
+        text-align: center;
+    }
+
+    .bnr-description21 {
+        text-align: center;
+    }
+
+    .card-detail h3 {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .card-descrition {
+        margin-top: 15px;
+    }
+
+    .card-info {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .playing {
         flex-direction: column;
+        align-items: center;
     }
 
-    .card-info {
-        grid-template-columns: 2fr;
+    .play-info {
+        width: 100%;
+    }
+
+    .play-info p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .play-info h2 {
+        text-align: center;
+    }
+
+    .play-img img {
+        margin-top: 60px;
+        height: 300px;
+    }
+
+    .play-img {
+        margin-left: 180px;
+    }
+
+    .tom img {
+        height: 220px;
+    }
+
+    .games-cata1 {
+        flex-wrap: wrap;
+    }
+
+    .games-cata2 {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .note-section2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .note-section {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
