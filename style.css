@@ -323,9 +323,10 @@
 /* !games scetion */
 
 .games-cata1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 10px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
 .game-info {
@@ -333,12 +334,19 @@
     align-items: center;
     gap: 5px;
 }
-
+#word-gm:hover{
+    border-radius: 50px;
+    background-color: #FFF;
+    border: 2px solid rgb(221, 66, 162);
+    padding: 10px;
+    height: 45px;
+}
 .games-cata2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 40px;
-    margin: 50px 200px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
 }
 
 /* footer section */
@@ -367,14 +375,12 @@ footer {
 
 .note-section {
     color: white;
-    display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 600px;
-        margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .buttons {
@@ -400,14 +406,10 @@ footer {
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 600px;
-    margin-top: 60px;
+    margin-top: 50px;
+    gap: 50px;
 }
 
 .last-section {
@@ -418,7 +420,7 @@ footer {
     font-weight: 500;
 }
 
-/* response css */
+/* !response css */
 @media screen and (max-width :576px) {
     header {
         padding: 20px;
@@ -435,25 +437,27 @@ footer {
 
     .banner-container {
         flex-direction: column-reverse;
-
-        display: flex;
-        align-items: center;
-        width: 100%;
+        justify-content: center;
         height: 100%;
     }
-
+    .banner-info{
+        margin-top: 390px;
+        margin-bottom: 100px;
+    }
+    .bnr-logo{
+        margin-left: 40px;
+    }
     .banner-container2 {
         flex-direction: column;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        width: 100%;
+        align-items: center;
         height: 100%;
+        width: 100%;
     }
 
     .bnr-logo2 {
         width: 500px;
+        margin-right: 70px;
     }
 
     .banner-info2 {
@@ -461,17 +465,22 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        margin-left: 120px;
     }
 
     .title2 {
+        margin-top: 60px;
         text-align: center;
     }
 
     .bnr-description2 {
         text-align: center;
+        width: 150%;
     }
-
+    .btn3{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     .bnr-description22 {
         text-align: center;
     }
@@ -479,7 +488,13 @@ footer {
     .bnr-description21 {
         text-align: center;
     }
-
+    .card-detail h3{
+        margin-top: 100px;
+        width: 100%;
+    }
+    .card-descrition{
+        margin-top: 15px;
+    }
     .card-info {
         grid-template-columns: 1fr;
     }
@@ -488,9 +503,12 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
+    .play-info{
+        width: 100%;
+    }
     .play-info p {
         text-align: center;
+        margin-top: 20px;
     }
 
     .play-info h2 {
@@ -505,26 +523,30 @@ footer {
     .play-img {
         margin-left: 180px;
     }
-
+    .tom img{
+        height: 220px;
+    }
     .games-cata1 {
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
+        flex-wrap: wrap;
     }
 
     .games-cata2 {
-        margin-top: 80px;
-        grid-template-columns: repeat(3, 1fr);
-        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
     }
 
     footer {
         flex-direction: column;
     }
-    .note-section2{
-        grid-template-columns: repeat(2, 1fr);
+
+    .note-section2 {
+        flex-wrap: wrap;
+        gap: 20px;
     }
-    .note-section{
-        grid-template-columns: repeat(3, 1fr);
+
+    .note-section {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 
@@ -534,12 +556,15 @@ footer {
     .nav-container {
         flex-direction: column;
     }
+
     .banner-container {
         flex-direction: column;
     }
+
     .banner-container2 {
         flex-direction: column;
     }
+
     .playing {
         flex-direction: column;
     }
