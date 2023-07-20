@@ -261,7 +261,7 @@
     opacity: 1;
     cursor: pointer;
 }
-.card-layout2:hover .card-layout2{
+.card-layout2:hover .crd-img{
     background-color: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
 }
 
