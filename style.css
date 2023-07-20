@@ -259,6 +259,10 @@
 
 .card-layout2:hover .play-button {
     opacity: 1;
+    cursor: pointer;
+}
+.card-layout2:hover .card-layout2{
+    background-color: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
 }
 
 .play-button img {
@@ -577,15 +581,6 @@ footer {
 
     header {
         padding: 20px;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-info {
-        flex-direction: column;
     }
 
     .banner-container {
